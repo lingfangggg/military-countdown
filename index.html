@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#f7f1e7">
+<link rel="icon" href="favicon.jpeg" type="image/x-icon">
+<title>葉啾啾的退伍倒數 🪖</title>
+<script>
+  (() => {
+    const param = new URLSearchParams(window.location.search).get("scoutTheme");
+    const theme =
+      param || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+    document.documentElement.setAttribute("data-theme", theme);
+  })();
+</script>
+<style>
+:root {
+  color-scheme: light;
+  --cp-bg: #f7f4ef;
+  --cp-bg-elevated: #fcfbf8;
+  --cp-surface: #ffffff;
+  --cp-surface-soft: #f5f5f5;
+  --cp-border: #dedede;
+  --cp-border-strong: #919191;
+  --cp-text: #242424;
+  --cp-text-muted: #5c5c5c;
+  --cp-text-soft: #6f6f6f;
+  --cp-accent: #b11f4b;
+  --cp-accent-hover: #9a1a41;
+  --cp-accent-soft: rgba(177, 31, 75, 0.08);
+  --cp-accent-fg: #ffffff;
+  --cp-success: #16a34a;
+  --cp-danger: #dc2626;
+  --cp-warning: #f59e0b;
+  --cp-link: #0078d4;
+  --cp-shadow: 0 18px 48px rgba(0, 0, 0, 0.12);
+  --cp-overlay: rgba(255, 255, 255, 0.8);
+  --cp-panel: rgba(255, 255, 255, 0.86);
+  --cp-panel-strong: rgba(255, 255, 255, 0.96);
+  --cp-sheen: rgba(255, 255, 255, 0.55);
+  --cp-highlight: rgba(177, 31, 75, 0.12);
+}
+html[data-theme="dark"] {
+  color-scheme: dark;
+  --cp-bg: #3d3b3a;
+  --cp-bg-elevated: #343231;
+  --cp-surface: #292929;
+  --cp-surface-soft: #2e2e2e;
+  --cp-border: #474747;
+  --cp-border-strong: #5f5f5f;
+  --cp-text: #dedede;
+  --cp-text-muted: #919191;
+  --cp-text-soft: #b0b0b0;
+  --cp-accent: #fd8ea1;
+  --cp-accent-hover: #fb7b91;
+  --cp-accent-soft: rgba(253, 142, 161, 0.14);
+  --cp-accent-fg: #1a1a1a;
+  --cp-success: #4ade80;
+  --cp-danger: #f87171;
+  --cp-warning: #fbbf24;
+  --cp-link: #4da6ff;
+  --cp-shadow: 0 18px 48px rgba(0, 0, 0, 0.32);
+  --cp-overlay: rgba(41, 41, 41, 0.88);
+  --cp-panel: rgba(41, 41, 41, 0.72);
+  --cp-panel-strong: rgba(41, 41, 41, 0.96);
+  --cp-sheen: rgba(255, 255, 255, 0.04);
+  --cp-highlight: rgba(253, 142, 161, 0.12);
+}
+:root{--cream:#f7f1e7;--paper:#fffdf8;--green:#46594b;--sage:#718071;--pale:#dfe5dc;--pink:#cc8790;--brown:#76675c;--ink:#3f443f;--muted:#7f817b;--shadow:0 18px 45px rgba(70,89,75,.13)}
+*{box-sizing:border-box}html{background:var(--cream)}body{margin:0;min-height:100vh;min-height:100svh;color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;background:radial-gradient(circle at 12% 8%,rgba(239,213,213,.65),transparent 27%),radial-gradient(circle at 90% 86%,rgba(199,211,197,.6),transparent 28%),linear-gradient(145deg,#fbf7ef,var(--cream) 55%,#f0e8dc);-webkit-font-smoothing:antialiased;overflow-x:hidden}button{font:inherit;-webkit-tap-highlight-color:transparent}button:focus-visible{outline:3px solid rgba(204,135,144,.45);outline-offset:4px}.page{position:relative;display:flex;justify-content:center;min-height:100vh;min-height:100svh;padding:calc(25px + env(safe-area-inset-top)) max(18px,env(safe-area-inset-right)) calc(35px + env(safe-area-inset-bottom)) max(18px,env(safe-area-inset-left));isolation:isolate}.bg{position:fixed;inset:0;z-index:-1;overflow:hidden;pointer-events:none}.blob{position:absolute;border-radius:50%;opacity:.5}.b1{width:190px;height:190px;right:-70px;top:-70px;background:rgba(204,135,144,.2)}.b2{width:220px;height:220px;left:-90px;bottom:3%;background:rgba(113,128,113,.15)}.spark{position:absolute;color:rgba(70,89,75,.22);font-family:Georgia,serif;animation:float 5s ease-in-out infinite}.s1{top:12%;left:8%;font-size:21px}.s2{top:27%;right:8%;font-size:24px;color:rgba(204,135,144,.28);animation-delay:-2s}.s3{bottom:12%;right:12%;animation-delay:-3s}.app{width:min(100%,460px);margin:auto 0;animation:enter .7s ease both}.label{margin:0 0 9px;color:var(--sage);font-size:.76rem;font-weight:800;letter-spacing:.25em;text-align:center}.title{margin:0;color:var(--green);font-family:Georgia,"Times New Roman",serif;font-size:clamp(3.6rem,17vw,5.15rem);font-weight:500;line-height:1;text-align:center}.title.complete{font-family:inherit;font-size:clamp(1.65rem,7.6vw,2.4rem);font-weight:850;letter-spacing:.06em}.date{margin:12px 0 0;color:var(--muted);font-size:.84rem;letter-spacing:.08em;text-align:center}.progress-wrap{display:flex;justify-content:center;margin:20px 0 25px}.progress{display:flex;align-items:center;justify-content:center;min-height:50px;padding:10px 18px;gap:12px;border:1px solid rgba(70,89,75,.12);border-radius:999px;background:rgba(255,253,248,.66);backdrop-filter:blur(8px)}.step{display:flex;width:25px;height:25px;align-items:center;justify-content:center;color:var(--pink);font:1.4rem/1 Georgia,serif}.step.empty:after{content:"";width:14px;height:14px;border:1.5px solid #adb2ac;border-radius:3px}.step.full{animation:pop .5s ease both}.note-card,.complete-card{position:relative;overflow:hidden;padding:29px 24px 25px;border:1px solid rgba(70,89,75,.1);border-radius:30px;background:rgba(255,253,248,.94);box-shadow:var(--shadow)}.note-card:before{position:absolute;top:16px;left:50%;width:70px;height:18px;border-radius:3px;background:rgba(227,204,176,.46);content:"";transform:translateX(-50%) rotate(-2deg)}.note-card.special{border-color:rgba(204,135,144,.28);box-shadow:0 20px 48px rgba(173,113,122,.16)}.eyebrow{display:flex;align-items:center;justify-content:center;margin:12px 0 16px;gap:8px;color:var(--pink);font-size:.72rem;font-weight:850;letter-spacing:.17em}.eyebrow:before,.eyebrow:after{width:22px;height:1px;background:currentColor;content:"";opacity:.5}.daily{margin:0;font-size:clamp(1.03rem,4.5vw,1.14rem);font-weight:500;line-height:1.95;text-align:center;white-space:pre-line}.gift,.receive{display:flex;width:100%;min-height:56px;align-items:center;justify-content:center;border-radius:15px;cursor:pointer;font-weight:780;transition:transform .2s ease,box-shadow .2s ease,background .2s ease;touch-action:manipulation}.gift{margin-top:24px;padding:14px 20px;border:0;color:#fffdf9;background:var(--green);box-shadow:0 10px 23px rgba(70,89,75,.22);letter-spacing:.04em}.gift:hover{transform:translateY(-2px);box-shadow:0 13px 28px rgba(70,89,75,.27)}.gift:active,.receive:active{transform:scale(.98)}.mission-section{display:grid;grid-template-rows:0fr;margin-top:0;opacity:0;transition:grid-template-rows .7s cubic-bezier(.2,.75,.25,1),opacity .45s ease,margin-top .6s ease}.mission-section.show{grid-template-rows:1fr;margin-top:20px;opacity:1}.overflow{min-height:0;overflow:hidden}.mission-card{position:relative;padding:24px 20px 20px;border:1px solid rgba(70,89,75,.13);border-radius:22px;background:linear-gradient(145deg,rgba(223,229,220,.78),rgba(248,245,237,.96));box-shadow:0 8px 22px rgba(70,89,75,.11);transform:translateY(18px) rotateX(-7deg);transform-origin:top;transition:transform .7s cubic-bezier(.2,.75,.25,1)}.mission-section.show .mission-card{transform:none}.mission-card:after{position:absolute;top:13px;right:14px;color:rgba(70,89,75,.15);content:"✦";font-size:1.5rem}.mission-heading{margin:0 0 17px;color:var(--sage);font-size:.73rem;font-weight:850;letter-spacing:.19em;text-align:center}.mission-text{margin:0;color:var(--green);font-size:clamp(1.13rem,5vw,1.28rem);font-weight:760;line-height:1.7;text-align:center;white-space:pre-line}.hints{display:grid;margin:18px 0 0;padding:0;gap:8px;list-style:none}.hints li{padding:10px 13px;border:1px solid rgba(70,89,75,.09);border-radius:12px;color:var(--brown);background:rgba(255,253,248,.64);font-size:.91rem}.mission-note{margin:18px 0 0;color:var(--muted);font-size:.87rem;line-height:1.65;text-align:center;white-space:pre-line}.receive{margin-top:16px;padding:13px 18px;border:1px solid rgba(204,135,144,.28);color:#9f6670;background:rgba(255,250,247,.88)}.receive:hover{transform:translateY(-1px);box-shadow:0 8px 18px rgba(204,135,144,.14)}.receive:disabled{color:var(--sage);border-color:rgba(70,89,75,.15);cursor:default;background:rgba(247,247,241,.84);box-shadow:none}.heart{display:inline-block;margin-right:8px;color:var(--pink)}.receive.bounce .heart{animation:heartBounce .7s ease}.reply{min-height:24px;margin:13px 0 0;color:var(--pink);font-size:.84rem;font-weight:650;line-height:1.5;text-align:center;opacity:0;transform:translateY(7px);transition:.4s ease}.reply.show{opacity:1;transform:none}.footer{margin:22px 0 0;color:rgba(70,89,75,.58);font:italic .78rem Georgia,serif;letter-spacing:.07em;text-align:center}.complete-card{text-align:center;padding-top:34px}.complete-card:before,.complete-card:after{position:absolute;color:rgba(204,135,144,.18);font:3.3rem Georgia,serif;content:"♡"}.complete-card:before{top:-12px;left:12px;transform:rotate(-16deg)}.complete-card:after{right:12px;bottom:-17px;transform:rotate(18deg)}.complete-title{margin:3px 0 25px;color:var(--green);font:600 clamp(2.15rem,10vw,3rem) Georgia,"Noto Serif TC",serif}.complete-mission{position:relative;z-index:1;padding:22px 18px;border:1px solid rgba(70,89,75,.12);border-radius:20px;background:linear-gradient(145deg,rgba(223,229,220,.75),rgba(248,245,237,.95))}.crossed{display:inline-block;margin:4px 0 16px;color:var(--muted);font-size:1.18rem;font-weight:700;text-decoration:line-through;text-decoration-color:var(--pink);text-decoration-thickness:2px}.reveal{margin:0;color:var(--green);font-size:clamp(1.65rem,7.7vw,2.15rem);font-weight:850;opacity:0;transform:translateY(10px);animation:reveal .8s .65s ease forwards}.welcome{margin:25px 0 0;color:var(--pink);font-size:1.12rem;font-weight:760;letter-spacing:.08em}.account{margin:20px auto 0;color:var(--brown);font-size:.87rem;line-height:1.8;white-space:pre-line}.confetti-layer{position:fixed;inset:0;z-index:10;overflow:hidden;pointer-events:none}.confetti{position:absolute;top:-24px;width:9px;height:14px;border-radius:3px;opacity:0;animation:fall var(--duration) var(--delay) ease-in forwards}.confetti.h{width:auto;height:auto;color:var(--pink);background:transparent!important;font:16px Georgia,serif}@keyframes enter{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}@keyframes float{50%{transform:translateY(-8px) rotate(5deg)}}@keyframes pop{from{opacity:0;transform:scale(.45)}70%{transform:scale(1.18)}to{opacity:1;transform:scale(1)}}@keyframes heartBounce{35%{transform:scale(1.55) translateY(-2px)}60%{transform:scale(.88)}80%{transform:scale(1.18)}}@keyframes reveal{to{opacity:1;transform:none}}@keyframes fall{0%{opacity:0;transform:translate3d(0,-20px,0) rotate(0)}10%{opacity:.82}100%{opacity:0;transform:translate3d(var(--drift),105vh,0) rotate(540deg)}}@media(min-width:680px){.page{padding-top:45px;padding-bottom:45px}.note-card,.complete-card{padding-left:32px;padding-right:32px}}@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;animation-delay:0ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}.spark,.confetti-layer{display:none}.reveal,.reply{opacity:1;transform:none}}
+.day-navigation{display:flex;gap:16px;margin-top:28px;font-family:"Segoe UI",Aptos,Calibri,-apple-system,BlinkMacSystemFont,sans-serif}
+.day-navigation button{flex:1;min-height:44px;padding:8px 12px;border:1px solid var(--cp-border);border-radius:.625rem;color:var(--cp-text);background:var(--cp-surface);font:inherit;cursor:pointer}
+.day-navigation button:hover:not(:disabled){border-color:var(--cp-accent)}
+.day-navigation button:disabled{opacity:.45;cursor:default}
+.day-navigation button.locked{border-style:dashed}
+.day-navigation :focus-visible{outline:3px solid var(--cp-accent);outline-offset:3px}
+</style>
+</head>
+<body>
+<div class="bg" aria-hidden="true"><span class="blob b1"></span><span class="blob b2"></span><span class="spark s1">✦</span><span class="spark s2">♡</span><span class="spark s3">✧</span></div>
+<main class="page"><div class="app">
+<section id="app" aria-live="polite"></section>
+<nav class="day-navigation" aria-label="切換日期">
+  <button id="previousDay" type="button">◁ 前一天</button>
+  <button id="nextDay" type="button">後一天 ▷</button>
+</nav>
+</div></main>
+<div class="confetti-layer" id="confettiLayer" aria-hidden="true"></div>
+<script>
+/* =========================================================
+   所有日期與每日文字集中在 CONFIG，之後可直接在此修改
+   ========================================================= */
+const CONFIG={
+  timeZone:"Asia/Taipei",
+  /* 修改日期 */
+  startDate:"2026-10-26",
+  dischargeDate:"2026-10-30",
+  days:{
+    "2026-10-26":{
+      countdown:5,dateLabel:"2026 / 10 / 26",
+      /* 修改每日小語 */
+      message:"國軍 online 正式進入最後 5 天！\n從今天開始每天都有一個小任務\n請這位戀愛腦先生認真完成🫡",
+      /* 修改每日任務 */
+      mission:"你在當兵的期間哪一天最想我？",
+      note:"以後每天放手機\n第一件事就是要點開這個網站📲",hints:[]
+    },
+    "2026-10-27":{
+      countdown:4,dateLabel:"2026 / 10 / 27",
+      message:"倒數 4 天 ♡\n距離自由又偷偷靠近了一點唷",
+      mission:"你最喜歡我的地方是什麼😗",
+      note:"認真或亂回答都可以😌\n打電話跟我說！",hints:[]
+    },
+    "2026-10-28":{
+      countdown:3,dateLabel:"2026 / 10 / 28",
+      message:"剩下 3 天！\n你可以開始把靈魂慢慢撤離軍營了🤲🏻",
+      mission:"退伍之後你最想做的三件事是什麼？",
+      note:"今天也很喜歡你 u!!",
+      // hints:[]
+      hints:["① 一件跟自己有關","② 一件跟我有關","③ 一件想怎樣就怎樣"]
+    },
+    "2026-10-29":{
+      countdown:2,dateLabel:"2026 / 10 / 29",special:true,
+      message:"距離見面倒數兩天！\n明天不用等你放手機\n就可以直接找到你嚕🕶️",
+      mission:"退伍後，最想跟我去哪裡玩、吃哪間餐廳？",
+      note:"這是最後一題，要認真回答！",hints:[]
+    }
+  },
+  /* 修改退伍日內容 */
+  completion:{
+    dateLabel:"2026 / 10 / 30",status:"MISSION COMPLETE",title:"恭喜退伍 ♡",
+    missionHeading:"TODAY'S MISSION",crossedOutText:"等放手機",revealText:"不用等了！",
+    welcomeText:"歡迎回來🤍",accountNote:"阿兵哥帳號正式登出\n談戀愛繼續有效😽"
+  },
+  receivedMessages:["今天也辛苦了♡","小毛已收到你的簽收🫡","再一下下就回來啦！","今天也有多想你一點點哦💖"]
+};
+const app=document.getElementById("app"),confettiLayer=document.getElementById("confettiLayer"),reduce=matchMedia("(prefers-reduced-motion: reduce)");
+function taipeiDate(){const f=new Intl.DateTimeFormat("en-US",{timeZone:CONFIG.timeZone,year:"numeric",month:"2-digit",day:"2-digit"}),v={};f.formatToParts(new Date()).forEach(p=>{if(p.type!=="literal")v[p.type]=p.value});return `${v.year}-${v.month}-${v.day}`}
+function viewFor(key){if(key>=CONFIG.dischargeDate)return{type:"complete",key:CONFIG.dischargeDate,data:CONFIG.completion};if(CONFIG.days[key])return{type:"day",key,data:CONFIG.days[key]};return{type:"day",key:CONFIG.startDate,data:CONFIG.days[CONFIG.startDate]}}
+function esc(v){return String(v).replaceAll("&","&amp;").replaceAll("<","&lt;").replaceAll(">","&gt;").replaceAll('"',"&quot;").replaceAll("'","&#039;")}
+function progress(n){return `<div class="progress" role="img" aria-label="退伍倒數進度：已完成 ${n} 天，共 5 天">${Array.from({length:5},(_,i)=>i<n?`<span class="step full" style="animation-delay:${i*70}ms" aria-hidden="true">♡</span>`:`<span class="step empty" aria-hidden="true"></span>`).join("")}</div>`}
+function hints(items){return items.length?`<ul class="hints" aria-label="任務提示">${items.map(x=>`<li>${esc(x)}</li>`).join("")}</ul>`:""}
+function keyFor(d){return `discharge-countdown-received-${d}`}
+function received(d){try{return localStorage.getItem(keyFor(d))==="true"}catch(e){return false}}
+function save(d){try{localStorage.setItem(keyFor(d),"true")}catch(e){}}
+function receivedMessage(dateKey){return CONFIG.receivedMessages[5-CONFIG.days[dateKey].countdown]}
+function renderDay(v){const d=v.data,done=6-d.countdown,got=received(v.key);app.innerHTML=`<header><p class="label">退伍倒數</p><h1 class="title">D - ${d.countdown}</h1><p class="date">${esc(d.dateLabel)}</p></header><div class="progress-wrap">${progress(done)}</div><article class="note-card ${d.special?"special":""}"><p class="eyebrow">${d.special?"LAST NIGHT MISSION":"LITTLE NOTE FOR YOU"}</p><p class="daily">${esc(d.message)}</p><button class="gift" id="gift" type="button" aria-expanded="false" aria-controls="mission">🎁 領取今天的任務</button></article><section class="mission-section" id="mission" aria-hidden="true"><div class="overflow"><article class="mission-card"><p class="mission-heading">TODAY'S MISSION</p><p class="mission-text">${esc(d.mission)}</p>${hints(d.hints)}<p class="mission-note">${esc(d.note)}</p><button class="receive" id="receive" type="button" ${got?"disabled":""}><span class="heart" aria-hidden="true">♡</span><span id="receiveText">${got?"今天的任務已收到 ✓":"收到任務"}</span></button><p class="reply ${got?"show":""}" id="reply" role="status">${got?esc(receivedMessage(v.key)):""}</p></article></div></section><p class="footer">counting down to you ♡</p>`;bind(v.key)}
+function bind(dateKey){const gift=document.getElementById("gift"),mission=document.getElementById("mission"),btn=document.getElementById("receive"),text=document.getElementById("receiveText"),reply=document.getElementById("reply");gift.addEventListener("click",()=>{if(!mission.classList.contains("show")){mission.classList.add("show");mission.setAttribute("aria-hidden","false");gift.setAttribute("aria-expanded","true");gift.textContent="任務已解鎖 ♡"}setTimeout(()=>mission.scrollIntoView({behavior:reduce.matches?"auto":"smooth",block:"nearest"}),100)});btn.addEventListener("click",()=>{if(btn.disabled||received(dateKey))return;save(dateKey);reply.textContent=receivedMessage(dateKey);reply.classList.add("show");btn.classList.add("bounce");btn.disabled=true;text.textContent="今天的任務已收到 ✓";setTimeout(()=>btn.classList.remove("bounce"),750)})}
+function renderComplete(v){const d=v.data;app.innerHTML=`<header><p class="label">退伍倒數</p><h1 class="title complete">${esc(d.status)}</h1><p class="date">${esc(d.dateLabel)}</p></header><div class="progress-wrap">${progress(5)}</div><article class="complete-card"><p class="eyebrow">WELCOME BACK</p><h2 class="complete-title">${esc(d.title)}</h2><section class="complete-mission"><p class="mission-heading">${esc(d.missionHeading)}</p><span class="crossed">${esc(d.crossedOutText)}</span><p class="reveal">${esc(d.revealText)}</p></section><p class="welcome">${esc(d.welcomeText)}</p><p class="account">${esc(d.accountNote)}</p></article><p class="footer">mission complete, welcome home ♡</p>`;confetti()}
+function confetti(){if(reduce.matches)return;const colors=["#cc8790","#718071","#d7b892","#9aaa98","#efd5d5"],frag=document.createDocumentFragment();for(let i=0;i<28;i++){const p=document.createElement("span"),heart=i%6===0;p.className=heart?"confetti h":"confetti";if(heart)p.textContent="♡";else p.style.backgroundColor=colors[Math.floor(Math.random()*colors.length)];p.style.left=`${Math.random()*100}%`;p.style.setProperty("--delay",`${Math.random()*1.7}s`);p.style.setProperty("--duration",`${4.1+Math.random()*2.1}s`);p.style.setProperty("--drift",`${-55+Math.random()*110}px`);frag.appendChild(p)}confettiLayer.appendChild(frag);setTimeout(()=>confettiLayer.innerHTML="",8500)}
+const dates=[...new Set([...Object.keys(CONFIG.days),CONFIG.dischargeDate])].sort();
+let currentDate=viewFor(taipeiDate()).key;
+const previousDay=document.getElementById("previousDay"),nextDay=document.getElementById("nextDay");
+function updateNavigation(){
+  const index=dates.indexOf(currentDate),today=taipeiDate();
+  for(const [button,target,label] of [[previousDay,dates[index-1],"◁ 前一天"],[nextDay,dates[index+1],"後一天 ▷"]]){
+    const locked=Boolean(target&&target>today);
+    button.disabled=!target||locked;
+    button.classList.toggle("locked",locked);
+    button.textContent=locked?"不能偷看！":label;
+  }
+}
+function renderCurrent(){
+  confettiLayer.replaceChildren();
+  if(currentDate>taipeiDate()){
+    app.innerHTML='<p class="daily">不能偷看！<br>倒數開始當天再來吧 ♡</p>';
+  }else{
+    const current=viewFor(currentDate);
+    current.type==="complete"?renderComplete(current):renderDay(current);
+  }
+  updateNavigation();
+}
+function changeDay(offset){
+  const target=dates[dates.indexOf(currentDate)+offset];
+  if(!target||target>taipeiDate()){updateNavigation();return}
+  currentDate=target;
+  renderCurrent();
+}
+previousDay.addEventListener("click",()=>changeDay(-1));
+nextDay.addEventListener("click",()=>changeDay(1));
+setInterval(updateNavigation,1000);
+renderCurrent();
+</script>
+</body>
+</html>
